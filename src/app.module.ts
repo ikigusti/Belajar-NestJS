@@ -6,7 +6,7 @@ import { FilekitaModule } from './filekita/filekita.module';
 import 'dotenv/config';
 
 @Module({
-  imports: [
+  imports: [TypeOrmModule.forRoot(),FilekitaModule
   ],
   controllers: [AppController],
   providers: [AppService],
